@@ -33,10 +33,6 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
-//    if there is an intent with extras
-//                update the score to be the score from extras
-
-
     }
 
     public void onRockButtonClicked(View button){

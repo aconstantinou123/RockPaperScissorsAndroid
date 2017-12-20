@@ -105,13 +105,6 @@ public class Game implements Serializable {
         return findWinner(this.playerChoice, computerChoice());
     }
 
-    public String generateWinnerPaper() {
-        return findWinner(playerChoicePaper(), computerChoice());
-    }
-
-    public String generateWinnerScissors() {
-        return findWinner(playerChoiceScissors(), computerChoice());
-    }
 }
 
 

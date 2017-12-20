@@ -90,22 +90,16 @@ public class GameTest {
         assertEquals("The computer chose: Paper\n" + "It's a draw", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
     }
 //
-//    @Test
-//    public void computerWinsWithRock(){
-//        game.playerChoiceScissors();
-//        game.setComputerChoice("Rock");
-//        assertEquals("The computer chose: Rock\n" +
-//                "You lose!", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
-//    }
+    @Test
+    public void computerWinsWithRock(){
+        game.playerChoiceScissors();
+        game.setComputerChoice(Choice.ROCK);
+        assertEquals("The computer chose: Rock\n" +
+                "You lose!", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
+    }
 //
-//    @Test
-//    public void generateWinnerRock(){
-//        assertNotNull(game.generateWinnerRock());
-//    }
-
-//    @Test
-//    public void generateWinnerPaper(){
-//        assertEquals();
-//    }
-
+    @Test
+    public void generateWinnerRock(){
+        assertNotNull(game.generateWinner());
+    }
 }
