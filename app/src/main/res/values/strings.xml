@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">RockPaperScissors</string>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="instructions">Choose either Rock, Paper, Scissors.
+        \n
+        1. Rock beats Scissors \n
+        2. Scissors beat Paper \n
+        3. Paper beats Rock \n
+        4. If you and the computer make the same choice, it's a draw!</string>
 </resources>
