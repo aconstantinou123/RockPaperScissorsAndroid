@@ -48,7 +48,41 @@ public class GameTest {
     public void playerWinsWithRock(){
         game.playerChoiceRock();
         game.setComputerChoice("Scissors");
-        assertEquals("Player wins", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
+        assertEquals("The computer chose: Scissors\n" +
+                "You win!", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
     }
+
+    @Test
+    public void playerWinsWithPaper(){
+        game.playerChoicePaper();
+        game.setComputerChoice("Rock");
+        assertEquals("The computer chose: Rock\n" +
+                "You win!", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
+    }
+
+    @Test
+    public void itsADraw(){
+        game.playerChoicePaper();
+        game.setComputerChoice("Paper");
+        assertEquals("It's a draw", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
+    }
+
+    @Test
+    public void computerWinsWithRock(){
+        game.playerChoiceScissors();
+        game.setComputerChoice("Rock");
+        assertEquals("The computer chose: Rock\n" +
+                "You lose!", game.findWinner(game.getPlayerChoice(), game.getComputerChoice()));
+    }
+
+    @Test
+    public void generateWinnerRock(){
+        assertNotNull(game.generateWinnerRock());
+    }
+
+//    @Test
+//    public void generateWinnerPaper(){
+//        assertEquals();
+//    }
 
 }
